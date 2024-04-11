@@ -1,0 +1,15 @@
+<!-- myapp/templates/myapp/book_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book List</title>
+</head>
+<body>
+    <h1>Book List</h1>
+    <ul>
+        {% for anyitem in books %}
+            <li>{{ anyitem.title }} by {{ anyitem.author }} ({{ anyitem.publication_year }})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
